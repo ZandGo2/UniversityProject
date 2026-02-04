@@ -1,0 +1,119 @@
+.container {
+  background-color: #fff;
+  width: 571px;
+  padding: 0px 40px 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.container .svg {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  cursor: pointer;
+}
+.container h2 {
+  font-family: var(--font-yekan-bakh);
+  font-weight: 500;
+  font-size: 28px;
+  color: #282828;
+  margin-top: 59px;
+  margin-bottom: 8px;
+}
+.container .title {
+  font-family: var(--font-yekan-bakh);
+}
+.container .phone {
+  font-family: var(--font-vazirmatn-numbers);
+}
+.container .title,
+.container .phone {
+  font-weight: 400;
+  font-size: 16px;
+  color: #282828;
+}
+.otpContainer {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  direction: ltr;
+  margin-top: 18px;
+}
+
+.otpInput {
+  width: 58px !important;
+  height: 53px;
+  font-family: var(--font-vazirmatn-numbers);
+  font-size: 20px;
+  color: #282828;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.otpInput:focus {
+  border-color: #28a745;
+}
+.disabledOtpInput {
+  border: 1px solid red;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 91.79%;
+    max-width: 390px;
+    padding: 0px 34px 40px 34px;
+  }
+  .container h2 {
+    margin-bottom: 17px;
+    line-height: 100%;
+    font-size: 22px;
+  }
+  .container .title,
+  .container .phone {
+    line-height: 100%;
+    font-size: 14px;
+  }
+  .otpContainer {
+    margin-top: 21px;
+    gap: 15px;
+  }
+
+  .otpInput {
+    width: 40px !important;
+    height: 35px !important;
+  }
+}
+@media (min-width: 601px) and (max-width: 1200px) {
+  .container {
+    width: 70%;
+    max-width: 500px;
+    padding: 0px 34px 40px 34px;
+    max-width: 450;
+  }
+
+  .container h2 {
+    margin-bottom: 17px;
+    line-height: 100%;
+    font-size: 22px;
+  }
+
+  .container .title,
+  .container .phone {
+    line-height: 100%;
+    font-size: 14px;
+  }
+  .otpContainer {
+    margin-top: 21px;
+    gap: 20px;
+  }
+
+  .otpInput {
+    width: 50px !important;
+    height: 45px !important;
+  }
+}

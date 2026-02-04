@@ -1,0 +1,17 @@
+.inputWrapper {
+  position: relative;
+}
+
+.dateInput {
+  width: 100%;
+  padding-right: 30px !important ;
+  cursor: pointer;
+}
+.calendarIcon {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}

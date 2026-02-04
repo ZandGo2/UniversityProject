@@ -1,0 +1,131 @@
+.inputWrapper {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+}
+
+.dateInput {
+  width: 100%;
+  padding-right: 28px !important ;
+  cursor: pointer;
+  border: none;
+  font-family: var(--font-iransans);
+  font-weight: 400;
+  font-size: 18px;
+  color: #2c2c2c !important;
+  text-align: right;
+}
+.dateInput:focus {
+  outline: none;
+}
+.calendarIcon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.inputWrapper .closeBtn {
+  border-radius: 16px;
+  cursor: pointer;
+  background-color: #f7753d49;
+  color: #fe5d42;
+  font-family: var(--font-yekan-bakh);
+  font-size: 10px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: -12px;
+  left: -9px;
+  transform: rotateZ(335deg);
+  z-index: 10;
+}
+.closeBtn svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 480px) {
+  .dateInput {
+    padding-right: 0 !important ;
+    height: 47px;
+    font-size: 16px;
+    border: 1px solid #00000026;
+    border-radius: 12px;
+    text-align: center;
+  }
+  .calendarIcon {
+    width: 18px;
+    height: 18px;
+    color: #00000080;
+    right: unset;
+    left: 50%;
+    top: 50%;
+    transform: translate(245%, -50%);
+  }
+  .inputWrapper .closeBtn {
+    border-radius: 6px;
+    font-size: 8px;
+    top: 50%;
+    left: 20px;
+    transform: rotateZ(0deg) translateY(-50%);
+    z-index: 10;
+  }
+  .closeBtn svg {
+    /* display: block; */
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .dateInput {
+    padding-right: 0 !important ;
+    height: 50px;
+    font-size: 18px;
+    border: 1px solid #00000026;
+    border-radius: 12px;
+    text-align: center;
+  }
+  .calendarIcon {
+    width: 20px;
+    height: 20px;
+    color: #00000080;
+    right: unset;
+    left: 50%;
+    top: 50%;
+    transform: translate(245%, -50%);
+  }
+  .inputWrapper .closeBtn {
+    border-radius: 6px;
+    font-size: 10px;
+    top: 50%;
+    left: 20px;
+    transform: rotateZ(0deg) translateY(-50%);
+    z-index: 10;
+  }
+  .closeBtn svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .dateInput {
+    font-size: 16px;
+  }
+
+  .calendarIcon {
+    right: 4px;
+  }
+
+  .inputWrapper .closeBtn {
+    border-radius: 4px;
+  }
+  .closeBtn svg {
+    width: 18px;
+    height: 18px;
+  }
+}

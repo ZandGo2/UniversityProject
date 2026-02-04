@@ -1,0 +1,21 @@
+.main {
+  width: calc(100% - 252px);
+  margin: 0 auto;
+  position: relative;
+  min-height: calc(100vh - 74px);
+}
+@media (max-width: 480px) {
+  .main {
+    width: calc(100% - 62px);
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .main {
+    width: calc(100% - 124px);
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  .main {
+    width: calc(100% - 200px);
+  }
+}
